@@ -1,6 +1,8 @@
 const yargs = require('yargs');
 
 const geocode = require('./geocode/geocode');
+const weather = require('./weather/weather');
+
 const argv = yargs
 	.options({
 		a: {
@@ -22,3 +24,5 @@ const argv = yargs
 			console.log(JSON.stringify(results, undefined, 2));
 		}
 	});
+
+	weather.getWeather();
