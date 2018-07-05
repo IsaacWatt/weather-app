@@ -21,8 +21,14 @@ const argv = yargs
 		if (errorMessage) {
 			console.log(errorMessage);
 		} else {
-			console.log(JSON.stringify(results, undefined, 2));
+			console.log(results.address);
+			weather.getWeather(results.lat , results.lng, (error, weatherResults) => {
+				if (error) {
+					console.log(error);
+				} else {
+					console.log(`its currently ${weatherResults.temperature}. It feels
+						like ${weatherResults.apparentTemp}.`);
+				}
+			});
 		}
 	});
-
-	weather.getWeather();
