@@ -26,8 +26,7 @@ const argv = yargs
 				if (error) {
 					console.log(error);
 				} else {
-					console.log(`its currently ${weatherResults.temperature}. It feels
-						like ${weatherResults.apparentTemp}.`);
+					console.log(`its currently ${weatherResults.temperature}. It feels like ${weatherResults.apparentTemp}.`);
 				}
 			});
 		}
