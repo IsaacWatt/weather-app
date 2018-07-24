@@ -13,7 +13,8 @@ node <application> <command> <arg>
 
 `<application>` is one of `app.js` for the implementation using callbacks, `app-promises.js` for the implementation using promises. 
 
-`<command>` can be `-h` or `--help` which will show a list of commands and theyre args required. 
+`<command>` can be `-h` or `--help` which will show a list of commands and their args required. 
+
 `<command>` can be `-a` or `--address` which must be followed by an address string as the `<arg>`. 
 
 The command line will output the closest resembling address to the address provided as an `<arg>`, 
